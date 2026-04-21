@@ -6,8 +6,13 @@ import { motion, AnimatePresence } from 'motion/react';
 
 export default function WelcomeVideoPopup() {
   const [open, setOpen] = useState(false);
+  const [embedSrc, setEmbedSrc] = useState('');
 
   useEffect(() => {
+    const origin = encodeURIComponent(window.location.origin);
+    setEmbedSrc(
+      `https://www.youtube-nocookie.com/embed/erOtCcNPTeg?autoplay=1&mute=1&rel=0&origin=${origin}`
+    );
     const t = setTimeout(() => setOpen(true), 800);
     return () => clearTimeout(t);
   }, []);
@@ -61,14 +66,17 @@ export default function WelcomeVideoPopup() {
 
               {/* Video embed - 16:9 */}
               <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-                <iframe
-                  src="https://www.youtube.com/embed/erOtCcNPTeg?autoplay=1&mute=1&rel=0"
-                  title="Sinhala and Tamil New Year Celebration"
-                  allow="autoplay; encrypted-media; picture-in-picture"
-                  allowFullScreen
-                  className="absolute inset-0 w-full h-full"
-                  style={{ border: 'none' }}
-                />
+                {embedSrc && (
+                  <iframe
+                    src={embedSrc}
+                    title="Sinhala and Tamil New Year Celebration"
+                    allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+                    allowFullScreen
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    className="absolute inset-0 w-full h-full"
+                    style={{ border: 'none' }}
+                  />
+                )}
               </div>
             </div>
           </motion.div>
