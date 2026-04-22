@@ -8,7 +8,7 @@ export default function VideoSection() {
   useEffect(() => {
     const origin = encodeURIComponent(window.location.origin);
     setEmbedSrc(
-      `https://www.youtube-nocookie.com/embed/erOtCcNPTeg?rel=0&origin=${origin}`
+      `https://www.youtube-nocookie.com/embed/erOtCcNPTeg?autoplay=1&mute=1&rel=0&origin=${origin}`
     );
   }, []);
 
@@ -36,7 +36,7 @@ export default function VideoSection() {
             <iframe
               src={embedSrc}
               title="Sinhala and Tamil New Year Celebration"
-              allow="encrypted-media; picture-in-picture; fullscreen"
+              allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
               allowFullScreen
               referrerPolicy="strict-origin-when-cross-origin"
               loading="lazy"
