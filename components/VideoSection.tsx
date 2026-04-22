@@ -8,7 +8,7 @@ export default function VideoSection() {
   useEffect(() => {
     const origin = encodeURIComponent(window.location.origin);
     setEmbedSrc(
-      `https://www.youtube-nocookie.com/embed/erOtCcNPTeg?autoplay=0&mute=0&rel=0&origin=${origin}`
+      `https://www.youtube-nocookie.com/embed/erOtCcNPTeg?autoplay=1&mute=1&rel=0&origin=${origin}`
     );
   }, []);
 
@@ -19,9 +19,9 @@ export default function VideoSection() {
 
         {/* Section label */}
         <div className="flex flex-col items-center mb-8 md:mb-10">
-          {/* <span className="block text-[9px] sm:text-[10px] uppercase tracking-[0.45em] font-bold text-[#D4A044] mb-3">
-            Minds Boutique Hotel
-          </span> */}
+          <span className="block text-[9px] sm:text-[10px] uppercase tracking-[0.45em] font-bold text-[#D4A044] mb-3">
+           Minds Boutique Hotel & Wellness Resort
+          </span>
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-[#001F3D] text-center leading-snug px-2">
             Sinhala &amp; Tamil New Year Celebration
           </h2>
