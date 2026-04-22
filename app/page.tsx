@@ -7,14 +7,14 @@ import Venues from '@/components/Venues';
 import Gallery from '@/components/Gallery';
 import BookingForm from '@/components/BookingForm';
 import Footer from '@/components/Footer';
-import WelcomeVideoPopup from '@/components/WelcomeVideoPopup';
+import VideoSection from '@/components/VideoSection';
 
 export default function Home() {
   return (
     <main className="min-h-screen relative bg-[#FAF9F6]">
-      <WelcomeVideoPopup />
       <Navbar />
       <Hero />
+      <VideoSection />
       <OurStory />
       <Rooms />
       <Venues />

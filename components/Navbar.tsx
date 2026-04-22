@@ -50,7 +50,7 @@ export default function Navbar() {
           </div>
           <div className="flex flex-col">
             <span className={`font-serif font-bold text-sm md:text-base leading-tight tracking-wider transition-colors duration-300 ${isScrolled ? 'text-[#001F3D]' : 'text-white'}`}>Minds</span>
-            <span className="text-[9px] tracking-[0.2em] uppercase transition-colors duration-300 leading-[1.3] text-[var(--secondary-light)]">Boutique Hotel &<br />Wellness Resort</span>
+            <span className="text-[9px] tracking-[0.2em]  transition-colors duration-300 leading-[1.3] text-[var(--secondary-light)]">Boutique Hotel &<br />Wellness Resort</span>
           </div>
         </div>
 
