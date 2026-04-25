@@ -39,7 +39,7 @@ export default function BookingForm() {
               </div>
               <div className="flex flex-col gap-1">
                 <span className="font-bold text-sm tracking-widest text-[#001F3D] uppercase">Phone</span>
-                <p className="text-xs text-[#001F3D]/60">+94 77 662 1603</p>
+                <p className="text-xs text-[#001F3D]/60">+94 77 950 1000</p>
               </div>
             </div>
 
@@ -81,18 +81,18 @@ export default function BookingForm() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="flex flex-col gap-2">
                   <label className="text-[10px] font-bold uppercase tracking-widest text-[#001F3D]/50">Full Name *</label>
-                  <input type="text" placeholder="John Doe" className="w-full px-5 py-4 bg-[#FAF9F6] rounded-xl border-none text-sm text-[#001F3D] placeholder-[#001F3D]/30 focus:ring-2 focus:ring-[#D4A044] transition-all" />
+                  <input type="text" placeholder=" " className="w-full px-5 py-4 bg-[#FAF9F6] rounded-xl border-none text-sm text-[#001F3D] placeholder-[#001F3D]/30 focus:ring-2 focus:ring-[#D4A044] transition-all" />
                 </div>
                 <div className="flex flex-col gap-2">
                   <label className="text-[10px] font-bold uppercase tracking-widest text-[#001F3D]/50">Email Address *</label>
-                  <input type="email" placeholder="john@example.com" className="w-full px-5 py-4 bg-[#FAF9F6] rounded-xl border-none text-sm text-[#001F3D] placeholder-[#001F3D]/30 focus:ring-2 focus:ring-[#D4A044] transition-all" />
+                  <input type="email" placeholder=" " className="w-full px-5 py-4 bg-[#FAF9F6] rounded-xl border-none text-sm text-[#001F3D] placeholder-[#001F3D]/30 focus:ring-2 focus:ring-[#D4A044] transition-all" />
                 </div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="flex flex-col gap-2">
                   <label className="text-[10px] font-bold uppercase tracking-widest text-[#001F3D]/50">Phone Number</label>
-                  <input type="tel" placeholder="+1 (555) 000-0000" className="w-full px-5 py-4 bg-[#FAF9F6] rounded-xl border-none text-sm text-[#001F3D] placeholder-[#001F3D]/30 focus:ring-2 focus:ring-[#D4A044] transition-all" />
+                  <input type="tel" placeholder=" " className="w-full px-5 py-4 bg-[#FAF9F6] rounded-xl border-none text-sm text-[#001F3D] placeholder-[#001F3D]/30 focus:ring-2 focus:ring-[#D4A044] transition-all" />
                 </div>
                 <div className="flex flex-col gap-2">
                   <label className="text-[10px] font-bold uppercase tracking-widest text-[#001F3D]/50">Number of Guests</label>
